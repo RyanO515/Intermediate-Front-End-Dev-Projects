@@ -41,7 +41,7 @@ $(document).ready( function () {
 				if ( s.results.hasOwnProperty(entry)) {
 					$('.articles').append(
 
-						'<div class="entry"><h3 class="title"><a href="http://en.wikipedia.org/?curid=' + s.results[entry].pageid + 'target="_blank">' + s.results[entry].title + '</a></h3><p class="description">' + s.results[entry].extract + '</p></div>'
+						'<div class="entry"><h3 class="title"><a href="http://en.wikipedia.org/?curid=' + s.results[entry].pageid + '"' + 'target="_blank">' + s.results[entry].title + '</a></h3><p class="description">' + s.results[entry].extract + '</p></div>'
 
 					);
 				}
