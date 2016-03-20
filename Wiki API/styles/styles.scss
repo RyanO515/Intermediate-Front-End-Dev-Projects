@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic);
+
+// Stacks
+
+$font-stack: 'Lora', serif;
+$normal-font-weight: 400;
+$heavy-font-weight: 700;
+$italic-font: italic;
+
+// Font-sizes
+
+$large-heading: 2em;
+$normal-font-size: 1em;
+
+//Colors
+
+$background-color: #0a2e3a;
+$primary-font-color: #FBFBFB;
+$heading-font-color: #88de90;
+$div-background-color: #07585a;
+$orange-color: #e36c32;
+
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: $background-color;
+	font-family: $font-stack;
+	font-weight: $normal-font-weight;
+	color: $primary-font-color;
+	overflow-x: none;
+	padding-top: 40px;
+	min-width: 320px;
+}
+
+h1 {
+	font-weight: $heavy-font-weight;
+	color: $heading-font-color;
+	vertical-align: center;
+
+	#letter {
+		color: $orange-color;
+		font-size: $large-heading !important;
+		text-shadow: 1px 0px 0px #0a0a0a,
+						0px 1px 0px #0a0a0a;
+	}
+	#wiki {
+		font-size: $large-heading !important;
+		text-shadow: 1px 0px 0px #0a0a0a,
+						0px 1px 0px #0a0a0a;
+	}
+}
+
+.title {
+	color: $heading-font-color;
+
+	:hover {
+		color: $orange-color;
+		text-decoration: none;
+	}
+}
+
+img {
+	display: inline;
+	height: 80px;
+	width: 80px;
+	transition: all 1s ease;
+	position: relative;
+	left: 5px;
+
+	&:hover {
+		height: 100px;
+		width: 100px;
+	}
+}
+
+.search-input {
+	position: relative;
+	margin-top: 15px;
+
+	input {
+		border: 2px solid $heading-font-color;
+		border-radius: 35px;
+		background: none;
+		outline: none;
+		color: $primary-font-color;
+		width: 3%;
+		font-size: $normal-font-size;
+		padding: 10px 7px 10px 55px;
+		letter-spacing: 2px;
+		transition: all .5s ease;
+		&:focus {
+			border-color: $orange-color;
+			width: 80%;
+		}
+	}
+	span {
+		position: relative;
+		left: 25px;
+		top: 4px;
+	}
+
+	.btn-submit {
+		background: $orange-color !important;
+		width: 20%;
+		margin: 0 auto;
+		padding: 10px 20px 10px 20px;
+		font-size: $large-heading;
+		outline: none;
+
+		&:active {
+			outline: none;
+			position: relative;
+			top: 2px;
+		}
+	}
+}
+
+.articles {
+	width: 100;
+	background: none;
+	padding: 15px 0;
+}
+
+.entry {
+	background: $div-background-color;
+	padding: 10px 20px;
+	margin: 1% 0;
+	border-top: 5px solid $orange-color;
+}
+
+
+
+
+

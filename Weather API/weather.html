@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Local Weather Zipline</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="weather.css">
+	</head>
+	<body>
+		<h1 class="text-center">Your Local Weather</h1>
+		<h3 class="text-center">freeCodeCamp API Zipline</h3>
+		
+		<div id="iconTemp" class="text-center">
+			<div id='icon'></div>
+			<div id='temp'></div>
+		</div>
+
+		<div class="wrapper">
+			<div id='location' class="info"></div>
+			<div id="descr" class='info'></div>
+			<div id="wind" class='info'></div>
+		</div>
+
+
+		<div class="formDiv text-center">			
+			<form action="#">
+				<input type="text" id="zipcode" placeholder="Enter your zipcode"/>
+				<button class="btn btn-submit" id='submit'>Get Weather</button>
+				<br><br><br>
+
+				<div class="well">
+					<label id='styleText'> Pick your units:  
+					<br>
+						<select id="units">
+							<option value="imperial">Fahrenheit</option>
+							<option value="metric">Celcius</option>
+						</select>
+					</label>
+				</div>
+			</form>
+		</div> 
+		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="weather.js"></script>
+	</body>
+</html>

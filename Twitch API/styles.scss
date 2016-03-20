@@ -1,0 +1,173 @@
+
+
+
+/*font stack*/
+$font-url--google: 'https://fonts.googleapis.com/css?family=Raleway:400,200italic,700,300';
+$font-family--primary: 'Raleway', 'Helvetica', 'Arial', sans-serif;
+$font-family--secondary: 'Arial', sans-serif;
+
+/*font weights*/
+$font-weight--thin: 300; 
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+
+
+/*base colors*/
+$black: #48425b;
+$white: #f0f0f0;
+$light-grey: #acb4c4;
+$dark-grey: darken($light-grey, 50%);
+$light-green: #3cb25e;
+$dark-blue: #344c7c;
+$light-blue: lighten($dark-blue, 35%);
+
+/*text*/
+
+$base__font-size: 16px;
+$base__line: 24px;
+
+@if variable-exists(font-url--google) {
+	@import url($font-url--google)
+}
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $light-grey;
+	font-family: $font-family--primary;
+}
+
+h1.title-header {
+	font-size: 55px;
+	font-weight: $font-weight--bold; 
+}
+
+
+img {
+	&#logo {
+		height: 10%;
+		width: 100%;
+		margin: 10px 25%;
+		min-width: 600px;
+	}
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#wrapper {
+	width: 100%;
+	margin: 5% auto;
+}
+
+#title {
+	height: 80px;
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: $font-weight--bold;
+	background-color: $dark-grey;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	h1 {
+		color: $white;
+		line-height: 2.5em;
+
+	}
+}
+
+#pills {
+	background: $dark-grey;
+	font-weight: bold;
+}
+
+.box {
+	width: 100%;
+
+	.stream {
+		height: 70px;
+		display: block;
+		border: 1px solid $white;
+		line-height: 70px;
+		font-size: $base__font-size;
+		font-weight: $font-weight--bold;
+	}
+
+	img {
+		height: 40px;
+		margin-left: 2em;
+		border: 2px solid $white;
+	}
+
+	a {
+		margin-left: 2em;
+	}
+	span {
+		margin-right: 2em;
+		font-style: italic;
+	}
+}
+
+.online {
+	background-color: $light-green;
+
+	a:hover {
+		color: $dark-blue;
+	}
+}
+
+.offline {
+	background-color: $dark-blue;
+
+	span {
+		color: $light-blue;
+	}
+
+	a {
+		color: $white;
+	}
+	a:hover {
+		color: $light-green;
+	}
+}
+
+@media (max-width: 550px) {
+	.box {
+		a {
+			display: inline-block;
+		}
+
+		span {
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 420px) {
+	.box {
+
+		span {
+			display: none;
+		}
+
+		a {
+			padding-left: 25%;
+		}
+	}
+}
+
+@media (min-width: 850px) {
+	
+	#wrapper {
+		width: 60%;
+		margin: 5% auto;
+		max-width: 800px;
+	}
+}
+
+
+
+
+
+

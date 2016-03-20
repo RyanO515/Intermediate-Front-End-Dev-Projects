@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #0a2e3a;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #FBFBFB;
+  overflow-x: none;
+  padding-top: 40px;
+  min-width: 320px; }
+
+h1 {
+  font-weight: 700;
+  color: #88de90;
+  vertical-align: center; }
+  h1 #letter {
+    color: #e36c32;
+    font-size: 2em !important;
+    text-shadow: 1px 0px 0px #0a0a0a, 0px 1px 0px #0a0a0a; }
+  h1 #wiki {
+    font-size: 2em !important;
+    text-shadow: 1px 0px 0px #0a0a0a, 0px 1px 0px #0a0a0a; }
+
+.title {
+  color: #88de90; }
+  .title :hover {
+    color: #e36c32;
+    text-decoration: none; }
+
+img {
+  height: 80px;
+  width: 80px;
+  transition: all 1s ease;
+  position: relative;
+  left: 5px; }
+  img:hover {
+    height: 100px;
+    width: 100px; }
+
+.search-input {
+  position: relative;
+  margin-top: 15px; }
+  .search-input input {
+    border: 2px solid #88de90;
+    border-radius: 35px;
+    background: none;
+    outline: none;
+    color: #FBFBFB;
+    width: 3%;
+    font-size: 1em;
+    padding: 10px 7px 10px 55px;
+    letter-spacing: 2px;
+    transition: all .5s ease; }
+    .search-input input:focus {
+      border-color: #e36c32;
+      width: 80%; }
+  .search-input span {
+    position: relative;
+    left: 25px;
+    top: 4px; }
+  .search-input .btn-submit {
+    background: #e36c32 !important;
+    width: 20%;
+    margin: 0 auto;
+    padding: 10px 20px 10px 20px;
+    font-size: 2em;
+    outline: none; }
+    .search-input .btn-submit:active {
+      outline: none;
+      position: relative;
+      top: 2px; }
+
+.articles {
+  width: 100;
+  background: none;
+  padding: 15px 0; }
+
+.entry {
+  background: #07585a;
+  padding: 10px 20px;
+  margin: 1% 0;
+  border-top: 5px solid #e36c32; }
+
+/*# sourceMappingURL=styles.css.map */
