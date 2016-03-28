@@ -11,7 +11,10 @@ $(document).ready(function() {
 	$("#reset").on("click", function () {
 		move = 1;
 		$(".box").text("");
-		$(".box").css("background-color", "#6BAAD6");
+		$(".box").css({
+			"background": "#6BAAD6",
+			"border-color": "#000"
+		});
 		$('#result').text("");
 		return;
 	});
@@ -33,17 +36,20 @@ $(document).ready(function() {
 
 			if (checkForWinner() != -1 && checkForWinner() != "") {
 				if (checkForWinner() == user) {
-					$(".box").css("background-color", "green");
+					$(".box").css("background", "#5FCF80");
 					$("#result").text("You Win!!!");
+					return;
 				} else {
-					$(".box").css("background-color", "red");
+					$(".box").css("background", "#E94333");
 					$("#result").text("The Computer Wins!!!");
+					return;
 				}
 				play = false;
 			}
 
 			if (move > 9 && checkForWinner() == -1) {
 				$("#result").text("It's a draw!!!");
+				return;
 			}
 		}
 	});
@@ -87,6 +93,179 @@ $(document).ready(function() {
 		    space7 = $("#7"),
 		    space8 = $("#8"),
 		    space9 = $("#9");
+
+
+		if (space1.text() == computer && space2.text() == computer) {
+			if (space3.text().length == 0) {
+				space3.text(computer);
+				checkForWinner();
+				return;
+			}
+		} 
+		if (space1.text() == computer && space3.text() == computer) {
+			if (space2.text().length == 0) {
+				space2.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space2.text() == computer && space3.text() == computer) {
+			if (space1.text().length == 0) {
+				space1.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space4.text() == computer && space5.text() == computer) {
+			if (space6.text().length == 0) {
+				space6.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space4.text() == computer && space6.text() == computer) {
+			if (space5.text().length == 0) {
+				space5.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space5.text() == computer && space6.text() == computer) {
+			if (space4.text().length == 0) {
+				space4.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space7.text() == computer && space8.text() == computer) {
+			if (space9.text().length == 0) {
+				space9.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space7.text() == computer && space9.text() == computer) {
+			if (space8.text().length == 0) {
+				space8.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space8.text() == computer && space9.text() == computer) {
+			if (space7.text().length == 0) {
+				space7.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space1.text() == computer && space4.text() == computer) {
+			if (space7.text().length == 0) {
+				space7.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space1.text() == computer && space7.text() == computer) {
+			if (space4.text().length == 0) {
+				space4.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space4.text() == computer && space7.text() == computer) {
+			if (space1.text().length == 0) {
+				space1.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space2.text() == computer && space5.text() == computer) {
+			if (space8.text().length == 0) {
+				space8.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space2.text() == computer && space8.text() == computer) {
+			if (space5.text().length == 0) {
+				space5.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space5.text() == computer && space8.text() == computer) {
+			if (space2.text().length == 0) {
+				space2.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space3.text() == computer && space6.text() == computer) {
+			if (space9.text().length == 0) {
+				space9.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space3.text() == computer && space9.text() == computer) {
+			if (space6.text().length == 0) {
+				space6.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space6.text() == computer && space9.text() == computer) {
+			if (space3.text().length == 0) {
+				space3.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space1.text() == computer && space5.text() == computer) {
+			if (space9.text().length == 0) {
+				space9.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space1.text() == computer && space9.text() == computer) {
+			if (space5.text().length == 0) {
+				space5.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space3.text() == computer && space5.text() == computer) {
+			if (space7.text().length == 0) {
+				space7.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space3.text() == computer && space7.text() == computer) {
+			if (space5.text().length == 0) {
+				space5.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space5.text() == computer && space7.text() == computer) {
+			if (space3.text().length == 0) {
+				space3.text(computer);
+				checkForWinner();
+				return;
+			}
+		}
+		if (space4.text() == computer && space5.text() == computer) {
+			if (space6.text().length == 0) {
+				space6.text(computer);
+				checkForWinner();
+				return;
+			}
+		} 
+
+
+
 
 		if (space1.text() == user && space2.text() == user) {
 			if (space3.text().length == 0) {

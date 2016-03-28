@@ -34,6 +34,7 @@ table {
 	font-size: 30px;
 	text-align: center;
 	background: #6BAAD6;
+	transition: .1s all ease;
 }
 
 .box:hover {
@@ -52,14 +53,18 @@ table {
 }
 
 #choose {
-	width: 100%;
-	padding-bottom: 40px;
+	width: 70%;
+	margin: 40px auto;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+
 }
 .option {
 	width: 50%;
 	display: inline;
-	float: left;
 }
+
 p {
 	color: #fff;
 }
@@ -67,9 +72,16 @@ p {
 #reset {
 	padding: 8px 12px;
 	border: 1px solid #C25975;
-	border-radius: 10px;
+	border-radius: 8px;
 	background: #C25975;
 	text-decoration: none;
 	color: #fff;
+	margin: 20px auto;
+	display: inline-block;
+}
+
+#reset:active {
+	position: relative;
+	top: 2px;
 }
 
