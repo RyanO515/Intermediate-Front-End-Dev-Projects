@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simon Game</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	 <div id="shell">
+	    <div id="big-circle">
+	      <div id="green" class="color-btn circle-contain"></div>
+	      <div id="red" class="color-btn circle-contain"></div>
+	      <div id="yellow" class="color-btn circle-contain"></div>
+	      <div id="blue" class="color-btn circle-contain"></div>
+	    
+	      <div id="center" class="circle-contain">
+	        <h1> Simon <span class="small">&reg;</span></h1>
+	        <div class="buttons1">
+	          <div class="btn">
+	            <h1 id="display">--</h1>
+	            <h3> COUNT </h3>
+	          </div>
+	          
+	          <div class="btn">
+	            <div id="start" class='round-btn'></div>
+	            <h3>START</h3>
+	          </div>
+	          
+	          <div class="btn">
+	            <div id="strict-light" class="round-btn"></div>
+	            <div id="strict-btn" class='round-btn'></div>
+	            <h3>STRICT</h3>
+	          </div>
+	        </div>
+	        
+	        <div class="buttons2">
+	          <h3 id="off" class="inline">OFF</h3>
+	          <div id="slide" class="inline">
+	            <div id="power-switch"></div>
+	          </div>
+	          <h3 id="on" class="inline">ON</h3>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+	  
+	<audio id="beep0" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+    <audio id="beep1" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+    <audio id="beep2" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+    <audio id="beep3" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+    <audio id="buzzer" src="http://audiosoundclips.com/wp-content/uploads/2011/12/Beep2.mp3"></audio>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="app.js" type="text/javascript"></script>
+</body>
+</html>

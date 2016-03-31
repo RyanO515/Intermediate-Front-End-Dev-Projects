@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("http://wapphouse.xyz/wp-content/uploads/2016/02/table-top-background-.jpg") center center fixed;
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+#shell {
+  position: relative;
+  top: 10%;
+  height: 450px;
+  width: 450px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: grey;
+  box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.8);
+}
+
+#big-circle {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  margin: 0 auto;
+  top: 22px;
+  border-radius: 50%;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.circle-contain {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 3px solid #222;
+  z-index: 9999;
+}
+
+#green {
+  background-color: #00A74A;
+  top: -50%;
+  left: -50%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#green.active {
+  background-color: #47d147;
+}
+
+#red {
+  background-color: #9F0F17;
+  top: -50%;
+  left: 50%;
+  border-radius: 10px;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+#red.active {
+  background-color: #ff1a1a;
+}
+
+#yellow {
+  background: #CCA707;
+  top: 50%;
+  left: -50%;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+#yellow.active {
+  background-color: #ffff1a;
+}
+#blue {
+  background: #094A8F;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+}
+#blue.active {
+  background-color: #33bbff;
+}
+
+#center {
+  background-color: white;
+  border: 10px solid #222;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  top: 25%;
+  left: 25%;
+  margin: 0 auto;
+}
+
+#center h1 {
+  margin-top: 10px;
+  text-align: center;
+  position: relative;
+  left: 10px;
+}
+
+.buttons1 h3 {
+  font-size: 0.8em;
+}
+.buttons1 {
+  margin: 0 0 0 10px;
+}
+.btn {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+.round-btn {
+  margin: 0 auto;
+  height: 25px;
+  width: 25px;
+  border: 5px solid #333;
+  border-radius: 50%;
+}
+
+#display {
+  border: 2px solid #111;
+  text-align: center;
+  background-color: #32050C;
+  border-radius: 10px;
+  color: #333;
+}
+
+#display.active {
+  color: red;
+}
+
+#strict-light {
+  position: relative;
+  top: -5px;
+  background-color: black;
+  border: 2px solid black;
+  width: 10px;
+  height: 10px;
+}
+
+#strict-light.active {
+  background-color: red;
+}
+
+#start {
+  background-color: #ae2433;
+}
+
+#strict-btn {
+  background-color: yellow;
+}
+
+.buttons2,
+.buttons2 div {
+  display: inline-block;
+}
+
+.buttons2 h3 {
+  font-size:1em;
+}
+
+#slide {
+  position: relative;
+  width: 50px;
+  height: 28px;
+  background: #222;
+  border-radius: 5px;
+}
+#power-switch {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  background: #1199aa;
+  top: 3px;
+  left: 3px;
+}
+
+#power-switch.active {
+  left: 25px;
+}
+
+.inline {
+  display: inline;
+}
+.buttons2 {
+  padding-left: 30px;
+}
+.small {
+  font-size: 10px;
+  position:relative;
+  right: 8px;
+}
