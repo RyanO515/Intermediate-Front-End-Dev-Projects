@@ -1,0 +1,14 @@
+$space-large: 2.5rem;
+$font-stack: Helvetica, sans-serif;
+$title-color: #16A4D0;
+
+.page-title {
+  margin-top: $space-large;
+  margin-bottom: $space-large;
+  color: $title-color;
+  font-family: $font-stack;
+}
+
+input[type=search] {
+  box-shadow: none;
+}
