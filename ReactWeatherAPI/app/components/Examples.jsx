@@ -5,7 +5,7 @@ var Examples = React.createClass({
   render: function () {
     return (
       <div>
-        <h1 className="text-center">Examples</h1>
+        <h3 className="text-center page-title">Examples</h3>
         <p>Try out a few examples to fetch some weather: </p>
         <ol>
           <li>
